@@ -6,36 +6,32 @@ import org.springframework.stereotype.Component;
 @Component
 public class SearchCustomerResponse {
 
-	private String status;
-	private String message;
-	
-	@Autowired
-	private CustomerData data;
+  private String status;
+  private String message;
 
-	public String getStatus() {
-		return status;
-	}
+  @Autowired private CustomerData data;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public String getMessage() {
-		return message;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  public String getMessage() {
+    return message;
+  }
 
-	public CustomerData getData() {
-		return data;
-	}
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
-	public void setData(CustomerData data) {
-		this.data = data;
-	}
+  public CustomerData getData() {
+    return data;
+  }
 
-	
-
+  public void setData(CustomerData data) {
+    this.data = data;
+  }
 }
